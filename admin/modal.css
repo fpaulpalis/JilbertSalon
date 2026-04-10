@@ -1,0 +1,216 @@
+/* ============================================
+   MODAL.CSS - Reusable Modal Styles
+   For Jilbert Salon Management System
+   ============================================ */
+
+/* Success Modal Styles */
+.success-modal .modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.success-modal .modal-header {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+
+.success-modal .modal-body {
+    padding: 40px 30px;
+}
+
+.success-icon {
+    font-size: 5rem;
+    color: #28a745;
+    animation: scaleIn 0.5s ease-in-out;
+}
+
+/* Error Modal Styles */
+.error-modal .modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.error-modal .modal-header {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+
+.error-icon {
+    font-size: 5rem;
+    color: #dc3545;
+    animation: scaleIn 0.5s ease-in-out;
+}
+
+/* Confirm/Warning Modal Styles */
+.confirm-modal .modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-modal .modal-header {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+
+.warning-icon {
+    font-size: 4rem;
+    color: #dc3545;
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Info Modal Styles */
+.info-modal .modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.info-modal .modal-header {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+
+.info-icon {
+    font-size: 5rem;
+    color: #0d6efd;
+    animation: scaleIn 0.5s ease-in-out;
+}
+
+/* Styled Boxes for Important Information */
+.appointment-number,
+.service-name-box,
+.info-box {
+    background: linear-gradient(135deg, #816D2D 0%, #b29f94 100%);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(129, 109, 45, 0.3);
+}
+
+.service-name-box {
+    font-size: 1.2rem;
+}
+
+/* Countdown Timer */
+.countdown {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 15px;
+}
+
+.countdown i {
+    animation: pulse 1s infinite;
+}
+
+/* Animations */
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Modal Body Padding */
+.modal-body {
+    padding: 30px;
+}
+
+/* Close Button Styles */
+.btn-close-white {
+    filter: brightness(0) invert(1);
+}
+
+/* Modal Footer Buttons */
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 15px 30px;
+}
+
+.modal-footer .btn {
+    min-width: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .appointment-number,
+    .service-name-box,
+    .info-box {
+        font-size: 1rem;
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+
+    .success-icon,
+    .error-icon,
+    .info-icon {
+        font-size: 3rem;
+    }
+
+    .warning-icon {
+        font-size: 2.5rem;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+}
+
+/* Loading Spinner (Optional) */
+.modal-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #816D2D;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

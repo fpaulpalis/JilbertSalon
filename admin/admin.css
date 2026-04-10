@@ -1,0 +1,451 @@
+:root {
+    /* M3 "Antigravity" Surface Tones */
+    --m3-surface-bg: #FCFAF8;
+    /* Warm light gray background for floating feel */
+    --m3-surface-1: #F4F1EC;
+    /* Base surface container */
+    --m3-surface-2: #EFEBE4;
+    /* Slightly darker */
+    --m3-surface-3: #EAE6DC;
+
+    --m3-primary: #AA9144;
+    --m3-on-primary: #FFFFFF;
+
+    /* Muted gold-tinted active/primary container */
+    --m3-primary-container: #F6F3EB;
+    --m3-on-primary-container: #332B14;
+
+    /* Secondary now warm gray instead of purple */
+    --m3-secondary: #757169;
+    --m3-on-secondary: #FFFFFF;
+    --m3-secondary-container: #EAE8E3;
+    --m3-on-secondary-container: #2A2825;
+
+    /* Error - warm red, muted */
+    --m3-error: #B34D4A;
+    --m3-on-error: #ffffff;
+    --m3-error-container: #F6EAE9;
+    --m3-on-error-container: #4D2120;
+
+    /* Success - warm green, muted */
+    --m3-success: #527A5B;
+    --m3-on-success: #ffffff;
+    --m3-success-container: #EBF2ED;
+    --m3-on-success-container: #1E2D21;
+
+    /* Warning - muted warm yellow/gold */
+    --m3-warning: #C19E4A;
+    --m3-on-warning: #ffffff;
+    --m3-warning-container: #F8F3E9;
+    --m3-on-warning-container: #4D3A15;
+
+    --nav-rail-width: 88px;
+    --nav-bar-height: 80px;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif !important;
+    background-color: var(--m3-surface-bg);
+    color: #1A1C1E;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Typography Scales */
+.m3-display-large {
+    font-size: 57px;
+    line-height: 64px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+}
+
+.m3-display-medium {
+    font-size: 45px;
+    line-height: 52px;
+    font-weight: 400;
+}
+
+.m3-display-small {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 400;
+}
+
+.m3-headline-large {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.m3-headline-medium {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.m3-headline-small {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.m3-title-large {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.m3-title-medium {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+}
+
+.m3-title-small {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+.m3-label-large {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+.m3-body-large {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.m3-body-medium {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+}
+
+/* Dim text color utility */
+.m3-text-dim {
+    color: #747474;
+}
+
+.m3-text-light {
+    color: #c0c0c0;
+}
+
+/* Antigravity Cards */
+.m3-card {
+    background-color: var(--m3-surface-1);
+    border-radius: 28px;
+    border: none;
+    padding: 24px;
+    box-shadow: none !important;
+    /* Premium zero-shadow styling */
+    transition: background-color 0.2s ease, outline 0.2s ease;
+    outline: 1.5px solid transparent;
+}
+
+.m3-card:hover {
+    background-color: var(--m3-primary-container);
+    outline: 1.5px solid rgba(170, 145, 68, 0.25);
+}
+
+.m3-card.primary-container {
+    background-color: var(--m3-primary-container) !important;
+    color: var(--m3-on-primary-container) !important;
+}
+
+.m3-card.secondary-container {
+    background-color: var(--m3-secondary-container) !important;
+    color: var(--m3-on-secondary-container) !important;
+}
+
+.m3-card.error-container {
+    background-color: var(--m3-error-container) !important;
+    color: var(--m3-on-error-container) !important;
+}
+
+.m3-card.success-container {
+    background-color: var(--m3-success-container) !important;
+    color: var(--m3-on-success-container) !important;
+}
+
+.m3-card.warning-container {
+    background-color: var(--m3-warning-container) !important;
+    color: var(--m3-on-warning-container) !important;
+}
+
+.m3-card.surface-container-high {
+    background-color: #E5E2DA !important;
+}
+
+/* Stadium Buttons */
+.btn-m3 {
+    border-radius: 500px !important;
+    padding: 10px 24px !important;
+    font-weight: 500 !important;
+    transition: background-color 0.2s ease !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    text-transform: none;
+    text-decoration: none;
+    box-shadow: none !important;
+}
+
+.btn-m3-primary {
+    background-color: var(--m3-primary) !important;
+    color: var(--m3-on-primary) !important;
+}
+
+.btn-m3-primary:hover {
+    background-color: #937d3a !important;
+    /* Darkened gold */
+    color: var(--m3-on-primary) !important;
+}
+
+.btn-m3-tonal {
+    background-color: var(--m3-secondary-container) !important;
+    color: var(--m3-on-secondary-container) !important;
+}
+
+.btn-m3-tonal:hover {
+    background-color: #DFDBD3 !important;
+    /* Darkened neutral */
+}
+
+.btn-m3-danger {
+    background-color: var(--m3-error) !important;
+    color: var(--m3-on-error) !important;
+}
+
+.btn-m3-danger:hover {
+    background-color: #9A4240 !important;
+}
+
+.btn-m3-icon {
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0 !important;
+    border-radius: 500px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease !important;
+    border: none;
+    text-decoration: none;
+    margin: 0 2px;
+    box-shadow: none !important;
+}
+
+.btn-m3-icon-info {
+    background-color: var(--m3-secondary-container) !important;
+    /* Kept neutral */
+    color: var(--m3-on-secondary-container) !important;
+}
+
+.btn-m3-icon-primary {
+    background-color: var(--m3-primary-container) !important;
+    color: var(--m3-on-primary-container) !important;
+}
+
+.btn-m3-icon-danger {
+    background-color: var(--m3-error-container) !important;
+    color: var(--m3-on-error-container) !important;
+}
+
+.btn-m3-icon:hover {
+    background-color: #DFDBD3 !important;
+}
+
+.btn-m3-icon-primary:hover {
+    background-color: #EDE2C0 !important;
+}
+
+.btn-m3-icon-danger:hover {
+    background-color: #EBD3D2 !important;
+}
+
+.m3-fab-container {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 1050;
+}
+
+.btn-m3-fab {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px !important;
+    background-color: var(--m3-primary) !important;
+    color: var(--m3-on-primary) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none !important;
+    transition: background-color 0.2s ease, outline 0.2s ease;
+    outline: 1.5px solid transparent;
+}
+
+.btn-m3-fab:hover {
+    background-color: #937d3a !important;
+    outline: 1.5px solid rgba(170, 145, 68, 0.4);
+}
+
+.btn-m3-fab .material-symbols-outlined {
+    font-size: 28px;
+}
+
+/* M3 Navigation Railroad (Desktop) */
+.nav-rail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-rail-width);
+    height: 100vh;
+    background-color: var(--m3-surface-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    z-index: 1000;
+}
+
+.nav-rail .brand-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 32px;
+}
+
+.nav-rail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #49454E;
+    margin-bottom: 24px;
+    position: relative;
+    width: 100%;
+}
+
+.icon-container {
+    width: 64px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    transition: background-color 0.2s ease;
+    margin-bottom: 4px;
+}
+
+.nav-rail-item .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.nav-rail-item:hover {
+    color: #1A1C1E;
+}
+
+.nav-rail-item:hover .icon-container {
+    background-color: var(--m3-surface-2);
+}
+
+.nav-rail-item.active {
+    color: #332B14;
+    /* on primary container */
+    font-weight: 600;
+}
+
+.nav-rail-item.active .icon-container {
+    background-color: var(--m3-primary-container);
+}
+
+.nav-rail-item.active .material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    color: var(--m3-on-primary-container);
+}
+
+.nav-rail-item .label,
+.bottom-nav-item .label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Main Content Area */
+.m3-main-content {
+    margin-left: var(--nav-rail-width);
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* Responsive: Mobile Nav Bar */
+.bottom-nav-bar {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .nav-rail {
+        display: none;
+    }
+
+    .m3-main-content {
+        margin-left: 0;
+        padding: 16px;
+        padding-bottom: calc(var(--nav-bar-height) + 32px);
+    }
+
+    .bottom-nav-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: var(--nav-bar-height);
+        background-color: var(--m3-surface-1);
+        z-index: 1000;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 8px;
+        box-shadow: none;
+        /* Removed shadow */
+        border-top: 1px solid var(--m3-surface-2);
+        /* Faint border separation */
+    }
+
+    .bottom-nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #49454E;
+        flex: 1;
+    }
+
+    .bottom-nav-item .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .bottom-nav-item.active {
+        color: #332B14;
+    }
+
+    .bottom-nav-item.active .icon-container {
+        background-color: var(--m3-primary-container);
+    }
+
+    .bottom-nav-item.active .material-symbols-outlined {
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        color: var(--m3-on-primary-container);
+    }
+}

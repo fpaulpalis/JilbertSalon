@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.carousel {
+    overflow: hidden;
+    padding-bottom: 4rem;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-caption {
+    top: 55%;
+    margin-left: 10%;
+    left: 25%;
+    text-align: start;
+}
+
+.red-hat-display-head {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 52px;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+.red-hat-display-head {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 52px;
+    font-style: normal;
+    letter-spacing: 0.1em;
+}
+
+.red-hat-display-font {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 2px;
+    color: #c0c0c0;
+    letter-spacing: 0.1em;
+}
+
+.red-hat-display-title {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+}
+
+.red-hat-display-default {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 0.1em;
+}
+
+.red-hat-display-dim {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: #747474;
+}
+
+.red-hat-display-dim-footer {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 13px;
+    color: #c0c0c0;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #816D2D 0%, #b29f94 51%, #816D2D 100%)
+}
+
+.btn-grad {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding: 10px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #5E5E5E;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.brand {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+
+    .carousel-caption {
+        text-align: center;
+        top: 40%;
+        left: 50%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 150px;
+        padding: 5px 25px;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: center;
+        align-items: center;
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    .red-hat-display-head {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        margin: 0 auto;
+    }
+
+    .red-hat-display-font {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 12px;
+        margin-top: 2px;
+        color: #c0c0c0;
+    }
+
+    .footerrow {
+        margin: 0 auto;
+        padding: 0;
+        text-align: start;
+    }
+
+    .no-overflow {
+        display: none;
+    }
+
+    .brand {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Inner page banner height consistency */
+    .page-banner .carousel-item img {
+        max-height: 350px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .page-banner .carousel-caption {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+}

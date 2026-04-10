@@ -1,0 +1,48 @@
+
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+            background-color: #F4F1EC;
+        }
+        
+        .modal-content {
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .modal-header {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            color: white;
+            border-radius: 15px 15px 0 0;
+            border: none;
+        }
+        
+        .modal-body {
+            padding: 30px;
+        }
+        
+        .logout-icon {
+            font-size: 4rem;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+        
+        .btn-logout {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            border: none;
+            padding: 10px 30px;
+            font-weight: 500;
+        }
+        
+        .btn-logout:hover {
+            background: linear-gradient(135deg, #c82333 0%, #bd2130 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+        }
+        
+        .btn-cancel {
+            padding: 10px 30px;
+            font-weight: 500;
+        }
+ 
+        

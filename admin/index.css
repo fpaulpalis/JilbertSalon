@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #F4F1EC;
+    overflow-x: hidden;
+    
+    font-weight: 200;
+}
+
+
+.parent{
+    min-height: 100vh;
+    max-width: 100%;
+    /* Prevent content from exceeding viewport */
+    overflow-x: hidden;
+    margin-left: var(--sidebar-width);
+}
+.parent>* {
+    max-width: 100%;
+}
+
+
+.red-hat-display-head {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 52px;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+.red-hat-display-head {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 52px;
+    font-style: normal;
+    letter-spacing: 0.1em;
+}
+
+.red-hat-display-font {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 2px;
+    color: #c0c0c0;
+    letter-spacing: 0.1em;
+}
+
+.red-hat-display-title {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.2em;
+}
+
+.red-hat-display-default {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 0.1em;
+}
+
+.red-hat-display-dim {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: #747474;
+}
+
+.red-hat-display-dim-footer {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 13px;
+    color: #c0c0c0;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #816D2D 0%, #b29f94 51%, #816D2D 100%)
+}
+
+.btn-grad {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding: 10px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+    
+    .red-hat-display-head {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        margin: 0 auto;
+    }
+
+    .red-hat-display-font {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 12px;
+        margin-top: 2px;
+        color: #c0c0c0;
+    }
+
+    .btn {
+        width: 150px;
+        padding: 5px 25px;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: center;
+        align-items: center;
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+    }
+}
+
+.success-modal .modal-content {
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .success-modal .modal-header {
+            background: linear-gradient(135deg, #816D2D 0%, #b29f94 100%);
+            color: white;
+            border-radius: 15px 15px 0 0;
+            border: none;
+        }
+        
+        .success-modal .modal-body {
+            padding: 40px 30px;
+        }
+        
+        .success-icon {
+            font-size: 5rem;
+            color: #816D2D;
+            animation: scaleIn 0.5s ease-in-out;
+        }
+        
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .welcome-message {
+            background: linear-gradient(135deg, #816D2D 0%, #b29f94 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        
+        .countdown {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 15px;
+        }

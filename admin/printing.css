@@ -1,0 +1,138 @@
+@media print {
+    /* Hide non-print elements */
+    .no-print {
+        display: none !important;
+    }
+    
+    /* Remove left margin from main content */
+    .main-content {
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Prevent page breaks inside cards */
+    .card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    /* Force tables to display at full width */
+    .table-responsive {
+        overflow: visible !important;
+        display: block !important;
+    }
+    
+    /* Make tables fill the page width */
+    table {
+        width: 100% !important;
+        max-width: 100% !important;
+        table-layout: fixed !important;
+        font-size: 10px !important;
+    }
+    
+    /* Adjust table cells */
+    table th,
+    table td {
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        padding: 4px !important;
+        font-size: 9px !important;
+    }
+    
+    /* Make first column (Service Name / Customer) wider */
+    table td:nth-child(1),
+    table th:nth-child(1) {
+        width: 5% !important;
+    }
+    
+    /* Adjust column widths for detailed appointments table */
+    .appointment-details-table td:nth-child(5),
+    .appointment-details-table th:nth-child(5) {
+        width: 20% !important;
+        white-space: normal !important;
+    }
+    
+    /* Summary cards layout for print */
+    .row {
+        margin: 0 !important;
+    }
+    
+    .col-lg-4 {
+        width: 33.333% !important;
+        float: left !important;
+    }
+    
+    .col-lg-12 {
+        width: 100% !important;
+        clear: both !important;
+    }
+    
+    /* Card styling for print */
+    .card {
+        margin-bottom: 15px !important;
+        box-shadow: none !important;
+    }
+    
+    .card-body {
+        padding: 10px !important;
+    }
+    
+    /* Adjust heading sizes for print */
+    h1 {
+        font-size: 24px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    h2 {
+        font-size: 18px !important;
+    }
+    
+    h5 {
+        font-size: 14px !important;
+    }
+    
+    /* Badge styling */
+    .badge {
+        font-size: 8px !important;
+        padding: 2px 6px !important;
+    }
+    
+    /* Remove background colors for better print quality */
+    .bg-success,
+    .bg-primary,
+    .bg-info,
+    .bg-warning {
+        background-color: #f8f9fa !important;
+        border: 1px solid #dee2e6 !important;
+    }
+    
+    /* Keep text dark for readability */
+    .text-white {
+        color: #000 !important;
+    }
+    
+    /* Footer totals */
+    tfoot tr {
+        font-weight: bold !important;
+        border-top: 2px solid #000 !important;
+    }
+    
+    /* Page settings */
+    @page {
+        size: A4 landscape;
+        margin: 10mm;
+    }
+    
+    /* Container adjustments */
+    .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* Remove rounded corners for cleaner print */
+    .rounded-3 {
+        border-radius: 0 !important;
+    }
+}
