@@ -151,5 +151,7 @@ Access via `/admin/index.php`. Default credentials: `admin` / `admin`.
 | Soberano, Christian Adel S.  | 
 
 **Course:** ITE 314 — Advanced Database Systems | P3 PeTa & Exam
+
 **Submitted to:** Sir Rofer Junio Savella
+
 **Date:** November 1, 2025
